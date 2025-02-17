@@ -1,0 +1,117 @@
+.page {
+  background-image: url(../img/dirt-bg-pattern.png);
+  background-repeat: repeat;
+  font-family: "Minecraft Font";
+  color: white;
+  font-size: 24px;
+  line-height: 1.1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header-content {
+  position: relative;
+}
+
+.logo {
+  width: 1024px;
+}
+
+.splash-text {
+  font-size: 32px;
+  position: absolute;
+  color: yellow;
+  right: 15px;
+  bottom: 40px;
+  rotate: -25deg;
+  scale: 1;
+  animation: splash 0.75s ease-in-out infinite alternate;
+  text-shadow: 2px 2px #000a;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  justify-items: center;
+  gap: 15px;
+}
+
+.info {
+  margin-top: 60px;
+  display: flex;
+  max-width: 800px;
+  justify-self: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.61);
+}
+
+.description {
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.mc-button {
+  height: 40px;
+  width: 450px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  user-select: none;
+  justify-self: center;
+  background: #999 url("https://i.ibb.co/rb2TWXL/bgbtn.png") center / cover;
+  image-rendering: pixelated;
+  border: 2px solid #000;
+}
+
+.mc-button:hover .mc-button-title {
+  background-color: rgba(100, 100, 255, 0.45);
+  text-shadow: 2px 2px #202013cc;
+  color: #ffffa0;
+}
+.mc-button:active .mc-button-title {
+  box-shadow: inset -2px -4px #0004, inset 2px 2px #fff5;
+}
+
+.mc-button-title {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  text-shadow: 2px 2px #000a;
+  box-shadow: inset -2px -4px #0006, inset 2px 2px #fff7;
+}
+
+.online {
+  color: green;
+}
+
+.offline {
+  color: red;
+}
+
+@keyframes splash {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 1.5;
+  }
+}
