@@ -58,12 +58,13 @@
   display: flex;
   max-width: 800px;
   justify-self: center;
-  padding: 20px;
-  background-color: rgba(0, 0, 0, 0.61);
+  flex-direction: column;
 }
 
 .description {
+  padding: 20px;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.61);
 }
 
 .buttons {
